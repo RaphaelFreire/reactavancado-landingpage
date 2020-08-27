@@ -5,6 +5,7 @@ import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
 import * as S from './styles'
 import { getImageUrl } from 'utils/getImageUrl'
+import { Author } from 'types/api'
 
 const icons = {
   Twitter: <FaTwitter />,
