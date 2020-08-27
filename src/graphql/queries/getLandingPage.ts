@@ -105,6 +105,7 @@ const GET_LANDING_PAGE = /* GraphQL */ `
 
   fragment sectionReview on LandingPage {
     sectionReviews {
+      id
       title
       reviews {
         name

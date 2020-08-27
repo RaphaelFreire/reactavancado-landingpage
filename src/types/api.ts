@@ -4,10 +4,12 @@ export type Question = {
 }
 
 export type Review = {
+  id: number
   name: string
   text: string
   photo: {
     url: string
+    alternativeText: string
   }
 }
 

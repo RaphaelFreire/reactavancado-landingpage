@@ -5,7 +5,7 @@ import { getImageUrl } from 'utils/getImageUrl'
 
 import * as S from './styles'
 
-const ReviewCard: React.FC<Review> = ({ id, name, image, text }) => {
+const ReviewCard: React.FC<Review> = ({ id, name, photo, text }) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 
@@ -25,7 +25,11 @@ const ReviewCard: React.FC<Review> = ({ id, name, image, text }) => {
   return (
     <S.Card>
       <S.User>
-        <S.Image src={getImageUrl(image)} alt={name} loading="lazy" />
+        <S.Image
+          src={getImageUrl(photo.url)}
+          alt={photo.alternativeText}
+          loading="lazy"
+        />
         <S.Name>{name}</S.Name>
       </S.User>
       <S.Text>
