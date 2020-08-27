@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
+import { Review } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 
 import * as S from './styles'
